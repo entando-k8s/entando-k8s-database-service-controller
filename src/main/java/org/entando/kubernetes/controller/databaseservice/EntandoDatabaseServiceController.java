@@ -53,7 +53,7 @@ public class EntandoDatabaseServiceController extends AbstractDbAwareController<
 
     @Override
     protected void synchronizeDeploymentState(EntandoDatabaseService newEntandoDatabaseService) {
-        if (newEntandoDatabaseService.getSpec().getCreateDeployment().orElse(false)) {
+        if (newEntandoDatabaseService.getSpec().getCr   eateDeployment().orElse(false)) {
             DatabaseDeployable<EntandoDatabaseService> deployable = new DatabaseDeployable<EntandoDatabaseService>(
                     DbmsDockerVendorStrategy.forVendor(newEntandoDatabaseService.getSpec().getDbms()), newEntandoDatabaseService,
                     ExternalDatabaseDeployment.NAME_QUALIFIER, newEntandoDatabaseService.getSpec().getPort().orElse(null)) {
