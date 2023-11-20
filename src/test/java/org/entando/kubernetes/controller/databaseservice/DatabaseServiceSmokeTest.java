@@ -30,7 +30,7 @@ import org.entando.kubernetes.test.e2etest.ControllerExecutor;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
-import org.postgresql.util.Base64;
+import org.postgresql.shaded.com.ongres.scram.common.bouncycastle.base64.Base64;
 
 @Tags({@Tag("smoke")})
 @Feature("As an Entando Operator users, I want to use a Docker container to process an EntandoDatabaseService so that I don't need to "
