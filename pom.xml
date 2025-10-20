@@ -68,7 +68,6 @@
         <entando-k8s-operator-common.version>7.3.0-fix.1-ESB-513-PR-165</entando-k8s-operator-common.version>
 <!--        <entando-k8s-operator-common.version>7.3.0-fix.1</entando-k8s-operator-common.version>-->
         <skipLicenseDownload>true</skipLicenseDownload>
-        <sonar.skip>true</sonar.skip>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
