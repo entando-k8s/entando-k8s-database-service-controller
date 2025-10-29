@@ -21,6 +21,7 @@ import static java.util.Optional.ofNullable;
 import static org.entando.kubernetes.controller.databaseservice.EntandoDatabaseServiceHelper.strategyFor;
 
 import io.fabric8.kubernetes.api.model.ObjectMeta;
+import jakarta.inject.Inject;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -28,7 +29,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
-import javax.inject.Inject;
 import org.entando.kubernetes.controller.spi.capability.CapabilityProvider;
 import org.entando.kubernetes.controller.spi.client.KubernetesClientForControllers;
 import org.entando.kubernetes.controller.spi.command.DeploymentProcessor;
