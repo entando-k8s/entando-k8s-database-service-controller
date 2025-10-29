@@ -21,8 +21,7 @@
     <parent>
         <groupId>org.entando</groupId>
         <artifactId>entando-quarkus-parent</artifactId>
-        <version>7.3.0-fix.1-ESB-513-PR-61</version>
-<!--        <version>7.3.0-fix.1</version>-->
+        <version>7.3.0-fix.1</version>
         <relativePath/>
     </parent>
     <artifactId>entando-k8s-database-service-controller</artifactId>
@@ -65,8 +64,7 @@
         <github.organization>entando-k8s</github.organization>
         <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
         <sonar.projectKey>${github.organization}_${project.artifactId}</sonar.projectKey>
-        <entando-k8s-operator-common.version>7.3.0-fix.1-ESB-513-PR-165</entando-k8s-operator-common.version>
-<!--        <entando-k8s-operator-common.version>7.3.0-fix.1</entando-k8s-operator-common.version>-->
+        <entando-k8s-operator-common.version>7.3.0-fix.1</entando-k8s-operator-common.version>
         <skipLicenseDownload>true</skipLicenseDownload>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -77,48 +75,8 @@
             <artifactId>entando-k8s-operator-common</artifactId>
             <version>${entando-k8s-operator-common.version}</version>
         </dependency>
-        <!--
-        <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-kubernetes-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.keycloak</groupId>
-            <artifactId>keycloak-admin-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.keycloak</groupId>
-            <artifactId>keycloak-core</artifactId>
-        </dependency>
-        -->
-
-        <!-- </required-by dependency="org.keycloakserver:keycloakserver-admin-client"> -->
-        <!--
-        <dependency>
-            <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-jaxrs</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-jackson2-provider</artifactId>
-        </dependency>
-        -->
-        <!-- </required-by> -->
 
         <!-- Test-scoped dependencies. -->
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
