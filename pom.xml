@@ -148,7 +148,7 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-            <id>jx-releases</id>
+            <id>nexus-entando</id>
             <url>https://dependencies.entando.org/repository/maven-releases/</url>
         </repository>
     </repositories>
